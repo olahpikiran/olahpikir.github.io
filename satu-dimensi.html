@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Satu Dimensi - BELAJAR</title>
+    <meta name="description" content="Satu Dimensi, , , , , , , 0, Array 1 Dimensi: Pengertian Array Satu Dimensi dan Contoh Pemrogramannya, dadannasrullah.blogspot.com, 1200 x 630, png, , 20, satu-dimensi, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Satu Dimensi - BELAJAR" />
+    <meta property="og:description" content="Satu Dimensi, , , , , , , 0, Array 1 Dimensi: Pengertian Array Satu Dimensi dan Contoh Pemrogramannya, dadannasrullah.blogspot.com, 1200 x 630, png, , 20, satu-dimensi, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Satu Dimensi - BELAJAR" />
+    <meta name="twitter:description" content="Satu Dimensi, , , , , , , 0, Array 1 Dimensi: Pengertian Array Satu Dimensi dan Contoh Pemrogramannya, dadannasrullah.blogspot.com, 1200 x 630, png, , 20, satu-dimensi, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://olahpikir.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://olahpikir.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://olahpikir.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://olahpikir.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://olahpikir.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://olahpikir.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://olahpikir.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://olahpikir.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Satu Dimensi</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">rasya534</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Satu+Dimensi" alt="Satu Dimensi">
+                    </div>
+                    <p></p>
+                    <p>apa yang dimaksud dengan satu dimensi,dua dimensi dan tiga dimensi​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-yang-dimaksud-dengan-satu-dimensidua-dimensi-dan-tiga-dimensi%e2%80%8b">1.
+                                            apa yang dimaksud dengan satu dimensi,dua dimensi dan tiga dimensi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#satuan-usaha-sama-dengan-satuan-energi-maka-dimensi-usaha-sama-juga-dengan-dimensi-energy-yaitu">2.
+                                            satuan usaha sama dengan satuan energi maka dimensi usaha sama juga dengan dimensi energy yaitu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dimensi-momen-gaya-sama-dengan-dimensi-dari-satuan">3.
+                                            dimensi momen gaya sama dengan dimensi dari satuan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#6-patung-merupakan-salah-satu-bentuk-karya-seni-dalam-bentuk-a-satu-dimensib-dua-dimensic-tiga-dimensid-empat-dimensi%e2%80%8b">4.
+                                            6. Patung merupakan salah satu bentuk karya seni dalam bentuk ...A. satu dimensiB. dua dimensiC. tiga dimensiD empat dimensi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#salah-satu-dimensi-yang-terkandung-dalam-pancasila-sebagai-ideologi-terbuka-yaitu-dimensi-realita-adapun-yang-dimaksud-dengan-dimensi-adalah-%e2%80%8b">5.
+                                            salah satu dimensi yang terkandung dalam Pancasila sebagai ideologi terbuka yaitu dimensi realita adapun yang dimaksud dengan dimensi adalah ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dimensi-gaya-tiap-satuan-luas-sama-dengan-dimensi">6.
+                                            Dimensi gaya tiap satuan luas sama dengan dimensi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-apa-itu-array-satu-dimensi-dan-multi-dimensi%e2%80%8b">7.
+                                            Jelaskan apa itu array satu dimensi dan multi dimensi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dimensi-momen-gaya-sama-dengan-dimensi-dari-satuan">8.
+                                            dimensi momen gaya sama dengan dimensi dari satuan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ada-7-besaran-pokok-yaitupanjangsatuan-meter-m-dimensi-l-massasatuan-kilogram-kg-dimensi-m-waktusatuan-detik-s-dimensi-t-suhusatuan-kelvin-k-dimensi-0-kuatarus-listrik-satuan">9.
+                                            Ada 7 besaran pokok, yaitu:Panjang(Satuan: meter, m. Dimensi: L) Massa(Satuan: kilogram, kg. Dimensi: M) Waktu(Satuan: detik, s. Dimensi: T) Suhu(Satuan: Kelvin, K. Dimensi: 0 Kuatarus listrik (Satuan: Ampere, A. Dimensi: I)Intensitascahaya (Satuan: Candela. Dimensi: J) Jumlahmolekul (Satuan: mol. Dimensi: N)Kelompok besaran di bawah ini yang merupakankelompok besaran turunan adalah ...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-patung-merupakan-salah-satu-bentukkarya-seni-dalam-bentuk-a-satu-dimensib-dua-dimensic-tiga-dimensid-empat-dimensi%e2%80%8b">10.
+                                            1.Patung merupakan salah satu bentukkarya seni dalam bentuk ....a. satu dimensib.dua dimensic.tiga dimensid.empat dimensi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-lukisan-adalah-salah-satu-karya-a-satu-dimensi-b-2-dimensi-c-tiga-dimensi-d-4-dimensi%e2%80%8b">11.
+                                            1] Lukisan Adalah Salah Satu Karya ... A. Satu Dimensi B. 2 Dimensi C. Tiga Dimensi D.4 Dimensi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dimensi-momen-gaya-sama-dengan-dimensi-dari-satuan">12.
+                                            dimensi momen gaya sama dengan dimensi dari satuan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-persamaan-dan-perbedaan-vektor-pada-dua-dimensi-dan-satu-dimensi">13.
+                                            apa persamaan dan perbedaan vektor pada dua dimensi dan satu dimensi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#energi-tiap-satuan-waktu-mempunyai-rumus-dimensi-sama-dengan-dimensi">14.
+                                            energi tiap satuan waktu mempunyai rumus dimensi sama dengan dimensi </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#satuan-usaha-sama-dengan-satuan-energi-yaitu-joule-maka-dimensi-usaha-juga-sama-dengan-dimensi-energi-yaitu">15.
+                                            Satuan usaha sama dengan satuan energi yaitu Joule, maka dimensi usaha juga sama dengan dimensi energi, yaitu.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apakah-ada-karya-satu-dimensi-dan-empat-dimensi">16.
+                                            apakah ada karya satu dimensi dan empat dimensi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-mengenai-bentuk-nol-dimensi-satu-dimensi-dua-dimensi">17.
+                                            Jelaskan mengenai bentuk nol dimensi, satu dimensi, dua dimensi?.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-mengenai-bentuk-nol-dimensi-satu-dimensi-dua-dimensi">18.
+                                            Jelaskan mengenai Bentuk nol dimensi, satu dimensi, dua dimensi ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mungkinkah-ada-gerak-dalam-dua-dimensi-dengan-percepatan-hanya-dalam-satu-dimensi">19.
+                                            Mungkinkah ada gerak dalam dua dimensi dengan percepatan hanya dalam satu dimensi? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-program-sederhana-menggunakan-array-dimensi-satu-array-dimensi-dua-array-dimensi-banyak">20.
+                                            Buat program sederhana menggunakan array dimensi satu / array dimensi dua / array dimensi banyak!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#usaha-tiap-satuan-waktu-memiliki-dimensi-yang-sama-dengan-dimensi%e2%80%8b">21.
+                                            Usaha tiap satuan waktu memiliki dimensi yang sama dengan dimensi?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-array-satu-dimensi-dua-dimensi-dan-tiga-dimensi%e2%80%8b">22.
+                                            perbedaan array satu dimensi, dua dimensi dan tiga dimensi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mungkinkah-ada-gerak-dalam-dua-dimensi-dengan-percepatan-hanya-dqlam-satu-dimensi">23.
+                                            Mungkinkah ada gerak dalam dua dimensi dengan percepatan hanya dqlam satu dimensi?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#patung-merupakan-karya-seni%e2%80%a6%c2%a03-poinsatu-dimensidua-dimensitiga-dimensiempat-dimensi%e2%80%8b">24.
+                                            Patung merupakan karya seni… *3 poinSatu dimensiDua dimensiTiga dimensiEmpat dimensi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#patung-termasuk-karya-seni-a-satu-dimensib-dua-dimensic-tiga-dimensidimensid-empat-dimensi%e2%80%8b">25.
+                                            Patung termasuk karya seni .A satu dimensiB dua dimensiC tiga dimensidimensiD. empat dimensi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-satu-dimensi-b-dua-dimensi-c-tiga-dimensi-d-empat-dimensi%e2%80%8b">26.
+                                            A. Satu dimensi B. Dua dimensi C. tiga dimensi D. Empat dimensi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-bantu-ciri-ciri-benda-tiga-dimensi-adalah-ciri-ciri-benda-dua-dimensi-adalahciri-ciri-benda-empat-dimensi-adalahciri-ciri-benda-satu-dimensi-adalahada-berapa-macam-dimensi-kalau-ada-sebutkan-s">27.
+                                            tolong bantu Ciri ciri benda tiga dimensi adalah Ciri ciri benda dua dimensi adalahciri ciri benda empat dimensi adalahCiri ciri benda satu dimensi adalahada berapa macam dimensi ?Kalau ada sebutkan satu satu​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gedung-merupakan-bentuka-satu-dimensib-dua-dimensic-tiga-dimensid-empat-dimensi%e2%80%8b">28.
+                                            gedung merupakan bentuka satu dimensib dua dimensic tiga dimensid empat dimensi​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dimensi-momen-gaya-sama-dengan-dimensi-dari-satuan">29.
+                                            dimensi momen gaya sama dengan dimensi dari satuan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-antara-antara-array-satu-dimensi-dan-array-dua-dimensi">30.
+                                            perbedaan antara antara array satu dimensi dan array dua dimensi</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apa-yang-dimaksud-dengan-satu-dimensidua-dimensi-dan-tiga-dimensi%e2%80%8b">
+                            1. apa yang dimaksud dengan satu dimensi,dua dimensi dan tiga dimensi​</h2><br />
+                        <p>Berdasarkan pertanyaan di atas, adapun yang dimaksud dengan <strong>satu dimensi </strong>yaitu benda yang hanya dapat dilihat dari satu arah dan hanya memilik salah satu bagian di antara panjang atau lebar. Contohnya titik. <strong>Dua dimensi</strong> merupakan benda yang memiliki panjang dan lebar serta dapat dilihat dari dua arah. <strong>Tiga dimensi </strong>merupakan benda yang memiliki panjang, lebar dan volume. Adapun benda yanh termasuk ke dalam tiga dimensi dapat dilihat dari berbagai arah. </p><p></p><p><strong>Pembahasan:</strong></p><p><strong>Karya seni rupa </strong>merupakan suatu produk yang memiliki nilai estetika disamping memiliki nilai fungsi. <strong>Karya seni rupa</strong> terdiri dari benda dua dimensi dan benda tiga dimensi. <strong>Dua dimensi</strong> merupakan benda yang memiliki panjang dan lebar serta dapat dilihat dari dua arah. <strong>Tiga dimensi</strong> merupakan benda yang memiliki panjang, lebar dan volume. Adapun benda yanh termasuk ke dalam tiga dimensi dapat dilihat dari berbagai arah. Dalam kehidupan sehari-hari, benda-benda yang termasuk ke dalam dua dimensi yaitu lukisan. Sedangkan benda-benda yang termasuk ke dalam <strong>benda tiga dimensi </strong>yaitu patung, vas bunga, gerabah. Lukisan terdiri dari beberapa unsur yaitu titik, garis, bangun dan bidang. Gabungan dari beberapa unsur tersebut dapat melahirkan suatu karya seni rupa dua dimensi yang memiliki nilai estetika. Nila estetika merupakan nilai keindahan.</p><p></p><p><strong>Pelajari lebih lanjut</strong></p>Materi tentang dua dimensi: https://brainly.co.id/tugas/1691042Materi tentang tiga dimensi: https://brainly.co.id/tugas/7458553Materi tentang karya seni rupa: https://brainly.co.id/tugas/2452332<p></p><p><strong>Detail jawaban</strong></p><p><strong>Kelas: </strong>3</p><p><strong>Mapel: </strong>Seni budaya</p><p><strong>Bab: </strong>Bab 1 - Karya Seni Rupa</p><p><strong>Kode: </strong>3.19.1 </p><p></p><p><strong>#AyoBelajar</strong></p><p><strong>#SPJ2 </strong></p><br />
+                                            <h2 class="ez-toc-section" id="satuan-usaha-sama-dengan-satuan-energi-maka-dimensi-usaha-sama-juga-dengan-dimensi-energy-yaitu">
+                            2. satuan usaha sama dengan satuan energi maka dimensi usaha sama juga dengan dimensi energy yaitu</h2><br />
+                        dimensi <br />
+[M] [L]^2 [T]^-2Dimensi Usaha atau Enegi = M.L².Tˉ²<br />cmiiw ya:)<br /><br />
+                                            <h2 class="ez-toc-section" id="dimensi-momen-gaya-sama-dengan-dimensi-dari-satuan">
+                            3. dimensi momen gaya sama dengan dimensi dari satuan</h2><br />
+                        jawabanya yaitu satuan kecepatanSetahu  saya jawabannya kecepatan<br /><br />
+                                            <h2 class="ez-toc-section" id="6-patung-merupakan-salah-satu-bentuk-karya-seni-dalam-bentuk-a-satu-dimensib-dua-dimensic-tiga-dimensid-empat-dimensi%e2%80%8b">
+                            4. 6. Patung merupakan salah satu bentuk karya seni dalam bentuk ...A. satu dimensiB. dua dimensiC. tiga dimensiD empat dimensi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C. tiga dimensi</p><p></p><p><strong>Penjelasan:</strong></p><p>patung merupakan karya seni 3d (tiga dimensi) arena patung memiliki ukuran panjang, lebar, tinggi, dan memiliki ketebalan /ruang </p><p></p><p></p><p><strong>semoga</strong><strong> membantu</strong><strong> </strong><strong>•</strong><strong>_</strong><strong>•</strong>  </p><br />
+                                            <h2 class="ez-toc-section" id="salah-satu-dimensi-yang-terkandung-dalam-pancasila-sebagai-ideologi-terbuka-yaitu-dimensi-realita-adapun-yang-dimaksud-dengan-dimensi-adalah-%e2%80%8b">
+                            5. salah satu dimensi yang terkandung dalam Pancasila sebagai ideologi terbuka yaitu dimensi realita adapun yang dimaksud dengan dimensi adalah ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>dimensi adalah cara suatu besaran tersusun atas beberapa besaran pokok. besara pokok yang dipakai : panjang dgn satuan m dan lambangnya L, massa dgn satuan kg dan lambangnya M, waktu dengan satuan s dan lambangnya T.</p><br />
+                                            <h2 class="ez-toc-section" id="dimensi-gaya-tiap-satuan-luas-sama-dengan-dimensi">
+                            6. Dimensi gaya tiap satuan luas sama dengan dimensi</h2><br />
+                        Dimensi gaya tiap satuan luas sama dengan dimensi tekanan<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-apa-itu-array-satu-dimensi-dan-multi-dimensi%e2%80%8b">
+                            7. Jelaskan apa itu array satu dimensi dan multi dimensi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Array satu dimensi adalah kumpulan elemen yang tersusun dalam suatu baris. ... Array Multidimensi merupakan sebuah perluasan dari sebuah array satu dimensi.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="dimensi-momen-gaya-sama-dengan-dimensi-dari-satuan">
+                            8. dimensi momen gaya sama dengan dimensi dari satuan</h2><br />
+                        jawabanya yaitu satuan kecepatanSetahu  saya jawabannya kecepatan<br /><br />
+                                            <h2 class="ez-toc-section" id="ada-7-besaran-pokok-yaitupanjangsatuan-meter-m-dimensi-l-massasatuan-kilogram-kg-dimensi-m-waktusatuan-detik-s-dimensi-t-suhusatuan-kelvin-k-dimensi-0-kuatarus-listrik-satuan">
+                            9. Ada 7 besaran pokok, yaitu:Panjang(Satuan: meter, m. Dimensi: L) Massa(Satuan: kilogram, kg. Dimensi: M) Waktu(Satuan: detik, s. Dimensi: T) Suhu(Satuan: Kelvin, K. Dimensi: 0 Kuatarus listrik (Satuan: Ampere, A. Dimensi: I)Intensitascahaya (Satuan: Candela. Dimensi: J) Jumlahmolekul (Satuan: mol. Dimensi: N)Kelompok besaran di bawah ini yang merupakankelompok besaran turunan adalah ...​</h2><br />
+                        <p><strong>Jawab</strong><strong> </strong><strong>:</strong></p><p>Massa satuan kg / m³</p><p><strong>Penjelasan:</strong></p><p>Besaran pokok :</p><p>Panjang satuan meter</p><p> Massa satuan kg </p><p>Waktu satuan sekon</p><p> Suhu satuan K</p><p>Kuat Arus Listrik satuan Ampere </p><p>Intensitas Cahaya satuan Candela </p><p>Jumlah zat satuan mol</p><p>Besaran Turunan :</p><p>Luas satuan m²</p><p>Kecepatan satuan m /s¹</p><p>Percepatan satuan m /s²</p><p>Massa Jenis satuan kg/m³</p><p>Gaya satuan N</p><p>tekanan satuan Pa</p><p></p><p>maap kalau salah</p><p><strong>Jawaban:</strong></p><p>MASSA SATUAN KG /M3 </p><p>MAF YA CUM SEGITU TAUNYA</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-patung-merupakan-salah-satu-bentukkarya-seni-dalam-bentuk-a-satu-dimensib-dua-dimensic-tiga-dimensid-empat-dimensi%e2%80%8b">
+                            10. 1.Patung merupakan salah satu bentukkarya seni dalam bentuk ....a. satu dimensib.dua dimensic.tiga dimensid.empat dimensi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C</p><p><strong>Penjelasan:</strong></p><p>Patung merupakan salah satu bentuk</p><p>karya seni dalam bentuk <strong>3</strong><strong> </strong><strong>dimensi</strong></p><p><strong>Karena</strong><strong> </strong><strong>patung</strong><strong> </strong><strong>memiliki</strong><strong> </strong><strong>panjang</strong><strong>,</strong><strong> </strong><strong>lebar</strong><strong>,</strong><strong> </strong><strong>dan</strong><strong> </strong><strong>volume</strong></p><p></p><p><strong>Semoga</strong><strong> </strong><strong>membantu</strong><strong> </strong></p><br />
+                                            <h2 class="ez-toc-section" id="1-lukisan-adalah-salah-satu-karya-a-satu-dimensi-b-2-dimensi-c-tiga-dimensi-d-4-dimensi%e2%80%8b">
+                            11. 1] Lukisan Adalah Salah Satu Karya ... A. Satu Dimensi B. 2 Dimensi C. Tiga Dimensi D.4 Dimensi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>B.</strong></p><p><strong>Penjelasan:</strong></p><p>2 dimensi, karena hanya dilukis, tidak berbentuk bangun ruang</p><p><strong>Jawaban:</strong></p><p>B. 2 dimensi </p><p></p><p><strong>Penjelasan:</strong></p><p>karena karya 2 dimensi hanya memiliki panjang dan lebar </p><br />
+                                            <h2 class="ez-toc-section" id="dimensi-momen-gaya-sama-dengan-dimensi-dari-satuan">
+                            12. dimensi momen gaya sama dengan dimensi dari satuan</h2><br />
+                        jawabanya yaitu satuan kecepatanSetahu  saya jawabannya kecepatan<br /><br />
+                                            <h2 class="ez-toc-section" id="apa-persamaan-dan-perbedaan-vektor-pada-dua-dimensi-dan-satu-dimensi">
+                            13. apa persamaan dan perbedaan vektor pada dua dimensi dan satu dimensi</h2><br />
+                        Persamaan :<br />- Vektornya bisa searah.<br />- Vektornya bisa sama persis.<br /><br />Perbedaan :<br />- Di 1D, gabisa gambar 2 vektor karena cuma 1 dimensi. Sementara di 2D, bisa gambar berapapun.<br />- Vektor di 1D bisa dinyatakan dalam 2D. Tapi Vektor 2D gabisa dinyatain dalam 1D.<br />
+                                            <h2 class="ez-toc-section" id="energi-tiap-satuan-waktu-mempunyai-rumus-dimensi-sama-dengan-dimensi">
+                            14. energi tiap satuan waktu mempunyai rumus dimensi sama dengan dimensi </h2><br />
+                        Energi tiap satuan waktu mempunyai rumus dimensi sama dengan dimensi daya.<br />
+                                            <h2 class="ez-toc-section" id="satuan-usaha-sama-dengan-satuan-energi-yaitu-joule-maka-dimensi-usaha-juga-sama-dengan-dimensi-energi-yaitu">
+                            15. Satuan usaha sama dengan satuan energi yaitu Joule, maka dimensi usaha juga sama dengan dimensi energi, yaitu.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Dimensi Energi dan Usaha adalah Sama</p><p><strong>Penjelasan:</strong></p><p>Karena memiliki satuan yang sama dengan usaha, dengan demikian dimensi energi dan usaha adalah sama.</p><br />
+                                            <h2 class="ez-toc-section" id="apakah-ada-karya-satu-dimensi-dan-empat-dimensi">
+                            16. apakah ada karya satu dimensi dan empat dimensi</h2><br />
+                        Tidak ada karna kalau dari di mensi apa yg dilihat dan kalau 4 dimensi selain punya panjang lebar dan tinggi maka apa yg harus ditambah agar menjadi 4 dimensi<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-mengenai-bentuk-nol-dimensi-satu-dimensi-dua-dimensi">
+                            17. Jelaskan mengenai bentuk nol dimensi, satu dimensi, dua dimensi?.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>nol dimensi adalah ruang topologis yang memiliki dimensi nol sehubungan dengan salah satu dari beberapa gagasan yang tidak setara dalam menetapkan dimensi ke ruang topologis tertentu</p><p></p><p>satu dimensi merupakan dimensi yang hanya memiliki satu unsur dimensi saja yaitu panjang. Benda-benda dimensi satu dapat bergerak bebas ke arah kanan dan ke arah kiri. Contoh benda dimensi satu adalah garis</p><p></p><p>dua dimensi adalah dimensi yang memiliki dua unsur dimensi yaitu unsur panjang dan unsur lebar. Benda-benda dimensi dua dapat bergerak bebas ke arah kanan, kiri, atas, dan juga bawah. Benda-benda dimensi dua sering juga disebut dengan istilah bangun datar. Ciri utama benda-benda dimensi dua adalah memiliki luas dan keliling</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-mengenai-bentuk-nol-dimensi-satu-dimensi-dua-dimensi">
+                            18. Jelaskan mengenai Bentuk nol dimensi, satu dimensi, dua dimensi ?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>nol</strong><strong> </strong><strong>dime</strong><strong>nsi</strong><strong> </strong><strong>adalah ruang topologis yang memiliki dimensi nol sehubungan dengan salah satu dari beberapa gagasan yang tidak setara dalam menetapkan dimensi ke ruang topologis tertentu</strong></p><p><strong>satu </strong><strong>d</strong><strong>i</strong><strong>m</strong><strong>e</strong><strong>n</strong><strong>s</strong><strong>i</strong><strong> </strong><strong>merupakan</strong><strong> dimensi yang hanya memiliki satu unsur dimensi saja yaitu panjang. Benda-benda dimensi satu dapat bergerak bebas ke arah kanan dan ke arah kiri. Contoh benda dimensi satu adalah garis</strong></p><p><strong>dua</strong><strong> </strong><strong>dimensi</strong><strong> </strong><strong>adalah dimensi yang memiliki dua unsur dimensi yaitu unsur panjang dan unsur lebar. Benda-benda dimensi dua dapat bergerak bebas ke arah kanan, kiri, atas, dan juga bawah.</strong><strong> </strong><strong>Benda-benda</strong><strong> dimensi dua sering juga disebut dengan istilah bangun datar. Ciri utama benda-benda dimensi dua adalah memiliki luas dan keliling</strong></p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p><strong>SE</strong><strong>MOGA</strong><strong> BERMANFAAT</strong><strong> DAN</strong><strong> MEMBANTU</strong></p><p><strong>SEL</strong><strong>AMAT</strong><strong> BELAJAR</strong></p><br />
+                                            <h2 class="ez-toc-section" id="mungkinkah-ada-gerak-dalam-dua-dimensi-dengan-percepatan-hanya-dalam-satu-dimensi">
+                            19. Mungkinkah ada gerak dalam dua dimensi dengan percepatan hanya dalam satu dimensi? </h2><br />
+                        <p><strong>Ada. Contoh: pada gerak parabola</strong>. percepatan hanya ada pada komponen sumbu y.</p><br />
+                                            <h2 class="ez-toc-section" id="buat-program-sederhana-menggunakan-array-dimensi-satu-array-dimensi-dua-array-dimensi-banyak">
+                            20. Buat program sederhana menggunakan array dimensi satu / array dimensi dua / array dimensi banyak!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>array dimensi 2</p><p><strong>Penjelasan:</strong></p><p>contoh seperti foto, lukisan dan gambar </p><strong>#</strong><strong>semoga </strong><strong>bermanfaat </strong><strong>:</strong><strong> </strong><strong>)</strong><br />
+                                            <h2 class="ez-toc-section" id="usaha-tiap-satuan-waktu-memiliki-dimensi-yang-sama-dengan-dimensi%e2%80%8b">
+                            21. Usaha tiap satuan waktu memiliki dimensi yang sama dengan dimensi?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Rumus Usaha = gaya x perpindahan
+</p><p>                      = (kg)(m/s²)(m)
+</p><p>Dimensi          = M L² T⁻²
+</p><p>
+</p><p>Rumus Energi = massa x percepatan gravitasi x tinggi
+</p><p>                     = (kg)(m/s²)(m)
+</p><p>Dimensi         = M L² T⁻²
+</p><p>
+</p><p>Terbukti keduanya memiliki dimensi yg sama .
+</p><p>
+</p><p>
+</p><p>catatn :
+</p><p>Eneri pada rumus diatas menggunkan persamaan energi potensial, namun hasil yg serupa akan di peroleh jka menggunakan energi kinetik
+</p><p>Penjabaran Energi kinetik = 1/2 × massa × (kecepatan)2  </p><p>                                      = (kg)(m/s)²  </p><p>                                      = (kg)(m² / s²)  </p><p>                                      = M L² T⁻²</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-array-satu-dimensi-dua-dimensi-dan-tiga-dimensi%e2%80%8b">
+                            22. perbedaan array satu dimensi, dua dimensi dan tiga dimensi​</h2><br />
+                        <p>Berikut adalah <strong>perbedaan</strong> dari <strong>array</strong> <strong>satu</strong>, <strong>dua</strong>, dan <strong>tiga dimensi</strong>:</p><strong>Satu dimensi:</strong> jenis elemen array yang hanya terdiri dari satu kolom atau baris. Array satu dimensi hanya bisa diakses dengan program yang memiliki indeks tertentu.<strong>Dua</strong> <strong>dimensi</strong>: jenis elemen array yang terdiri dari 2 bentuk index array sehingga memiliki dua atau lebih kolom dengan banyak baris. Array dua dimensi akan digambarkan dalam bentuk matriks atau grid.<strong>Tiga dimensi</strong>: jenis elemen array yang memiliki kolom, baris, dan juga berukuran lebih banyak ketimbang array dua dimensi. Penomoran index pada array tiga dimensi menggunakan 3 buah angka.<p></p>Pembahasan<p><strong>Array </strong>adalah salah satu istilah yang digunakan dalam dunia data di mana array adalah suatu larik yang berisikan data-data yang memiliki tipe atau jenis serupa. Array biasanya digunakan untuk menggambarkan bagaiman suatu data disimpan. Tujuan utama dari penggunaan array pada kumpulan data kita adalah untuk menyederhanakan cara mengumpulkan atau mengkategorisasikan data-data kita. Maka dari itu, penggunaan array bisa meningkatkan efektivitas dan juga efisiensi kita ketika mengumpulkan suatu data karena bisa menjadikan beberapa data menjadi satu larik saja. Ada beberapa jenis array yang bisa kita gunakan, yaitu array satu dimensi, dua dimensi, dan tiga dimensi.</p><p></p>Pelajari lebih lanjutMateri tentang kelebihan dan kekurangan array https://brainly.co.id/tugas/2219188Materi tentang array multidimensi https://brainly.co.id/tugas/2219188Materi tentang contoh array https://brainly.co.id/tugas/22974754<p></p>Detail jawaban<p><strong>Kelas</strong>: 10</p><p><strong>Mapel</strong>: TIK</p><p><strong>Bab</strong>: -</p><p><strong>Kode</strong>: 10.11</p><p><strong></strong></p><p><strong>#AyoBelajar #SPJ2 </strong></p><br />
+                                            <h2 class="ez-toc-section" id="mungkinkah-ada-gerak-dalam-dua-dimensi-dengan-percepatan-hanya-dqlam-satu-dimensi">
+                            23. Mungkinkah ada gerak dalam dua dimensi dengan percepatan hanya dqlam satu dimensi?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>ya</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="patung-merupakan-karya-seni%e2%80%a6%c2%a03-poinsatu-dimensidua-dimensitiga-dimensiempat-dimensi%e2%80%8b">
+                            24. Patung merupakan karya seni… *3 poinSatu dimensiDua dimensiTiga dimensiEmpat dimensi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>tiga dimensi</p><p><strong>Penjelasan:</strong></p><p>patung bisa diliat melalui berbagai sisi</p><p><strong>Jawaban:</strong></p><p>satu dimensi</p><p><strong>Penjelasan:</strong></p><p>maaf kalo salah</p><br />
+                                            <h2 class="ez-toc-section" id="patung-termasuk-karya-seni-a-satu-dimensib-dua-dimensic-tiga-dimensidimensid-empat-dimensi%e2%80%8b">
+                            25. Patung termasuk karya seni .A satu dimensiB dua dimensiC tiga dimensidimensiD. empat dimensi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C.Tiga dimensi</p><p><strong>Penjelasan:</strong></p><p>3 dimensi adalah karya seni yang memiliki panjang lebar tinggi dan volume yang bisa dilihat dari segala arah</p><br />
+                                            <h2 class="ez-toc-section" id="a-satu-dimensi-b-dua-dimensi-c-tiga-dimensi-d-empat-dimensi%e2%80%8b">
+                            26. A. Satu dimensi B. Dua dimensi C. tiga dimensi D. Empat dimensi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>B. Dua dimensi</p><p><strong>Penjelasan:</strong></p><p>karena hanya memiliki ukuran panjang dan lebar</p><p><strong>Jawaban:</strong></p><p>B.dua Dimensi</p><p><strong>Penjelasan:</strong></p><p></p><p>Kenapa 2 dimensi karena lukisan memiliki sisi Dimensi 2 saja Dari pandangan depan Hanya terlihat 2 Lekukan.</p><p></p><p></p><p>___________________</p>#BelajarBersamaBrainly<p></p><p>@XDarkstarHunterX</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tolong-bantu-ciri-ciri-benda-tiga-dimensi-adalah-ciri-ciri-benda-dua-dimensi-adalahciri-ciri-benda-empat-dimensi-adalahciri-ciri-benda-satu-dimensi-adalahada-berapa-macam-dimensi-kalau-ada-sebutkan-s">
+                            27. tolong bantu Ciri ciri benda tiga dimensi adalah Ciri ciri benda dua dimensi adalahciri ciri benda empat dimensi adalahCiri ciri benda satu dimensi adalahada berapa macam dimensi ?Kalau ada sebutkan satu satu​</h2><br />
+                        <p>Berikut ini ciri-ciri benda tiga dimensi dalam seni rupa. </p><p></p><p>- Seni rupa tiga dimensi merupakan karya seni rupa yang memiliki tiga ukuran atau sisi atau memiliki ruang ketiga berupa kedalaman. </p><p></p><p>- Benda tiga dimensi mempunyai panjang, lebar, tinggi, dan volume. </p><p></p><p>- Benda tiga dimensi dapat dilihat dari beragam sisi, baik depan, samping, atas, dan bawah. </p><p></p><p>- Benda tiga dimensi biasanya memiliki berat, berbeda dengan benda dua dimensi yang lebih tipis. </p><p></p><p>- Benda tiga dimensi memiliki ruang. </p><p></p><p>- Contoh benda tiga dimensi di sekitar kita antara lain patung, instalasi, arsitektur, seni kriya, lemari, vas bunga, dan sebagainya. </p><p></p><p>Ciri ciri benda dua dimensi </p><p>- hanya memiliki ukuran panjang dan lebar</p><p></p><p>- tidak menempati ruang</p><p></p><p>- hanya bisa di nikmati dari satu arah.</p><p></p><p>- medium pembuatannya berupa bidang datar</p><p></p><p>- memiliki dimensi luas.</p><p></p><p>-Contoh karya dua dimensi adalah lukisan, gambar, foto, tenunan, dan batik.</p><p></p><p>Ciri ciri benda empat dimensi</p><p>-Gambar yang terlihat seperti nyata</p><p>-mendekati aslinya </p><p>-seni rupa dimensi 4 dimensi adalah seni rupa yg memiliki 4 susunan seperti lebar, panjang, tinggi, dan alas, dan dapat dilihat dari berbagai sisi arah</p><p>-Contohnyq: Video</p><p></p><p></p><p>ada 5 macam dimensi</p>dimensi 1dimensi 2dimensi 3dimensi 4dimensi 5<p></p><p><strong>#Semoga</strong><strong> </strong><strong>membantu</strong></p><p><strong>#</strong><strong>DIMI222</strong></p><br />
+                                            <h2 class="ez-toc-section" id="gedung-merupakan-bentuka-satu-dimensib-dua-dimensic-tiga-dimensid-empat-dimensi%e2%80%8b">
+                            28. gedung merupakan bentuka satu dimensib dua dimensic tiga dimensid empat dimensi​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>gedung merupakan bentuk</p><p>a satu dimensi</p><p>b dua dimensi</p><p>c tiga dimensi</p><p>d empat dimensi</p><p></p><p>==============</p><p>d empat dimensi</p><p><strong>Jawaban:</strong></p><p><strong>D</strong><strong>.</strong><strong> </strong><strong>Empat</strong><strong> </strong><strong>dimensi</strong></p><p><strong>Penjelasan:</strong></p><p><strong>Nb</strong><strong>.</strong><strong> </strong><strong>semoga</strong><strong> </strong><strong>membantu</strong></p><br />
+                                            <h2 class="ez-toc-section" id="dimensi-momen-gaya-sama-dengan-dimensi-dari-satuan">
+                            29. dimensi momen gaya sama dengan dimensi dari satuan</h2><br />
+                        jawabanya yaitu satuan kecepatanSetahu  saya jawabannya kecepatan<br /><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-antara-antara-array-satu-dimensi-dan-array-dua-dimensi">
+                            30. perbedaan antara antara array satu dimensi dan array dua dimensi</h2><br />
+                        satu dimensi : cuma menampung data satu dimensi. contoh [1,2,3,4,5]<br /><br />dua dimensi : bisa menampung data dua dimensi,contohnya untuk matrix atau koordinat. contoh : [a,b,c,d],[1,2,3,4]. itu sederhana aja,tiap bahasa pemrograman beda syntaxnya<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>biologi</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/sugiyono-metode-penelitian-kuantitatif-kualitatif-dan-r-d-pdf.html">Sugiyono Metode Penelitian Kuantitatif Kualitatif Dan R d Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/pohon-sonokeling.html">Pohon Sonokeling</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/faktor-yang-mempengaruhi-interaksi-sosial.html">Faktor Yang Mempengaruhi Interaksi Sosial</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/sandi-sandi-pramuka.html">Sandi Sandi Pramuka</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/berikut-pelaksanaan-demokrasi-terpimpin-dalam-periode-1959-1965-adalah.html">Berikut Pelaksanaan Demokrasi Terpimpin Dalam Periode 1959 1965 Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/contoh-polisakarida.html">Contoh Polisakarida</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/apa-itu-fangirl.html">Apa Itu Fangirl</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/salah-satu-tugas-sekretaris-dalam-kepanitiaan-pameran-seni-rupa-adalah.html">Salah Satu Tugas Sekretaris Dalam Kepanitiaan Pameran Seni Rupa Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/intervensi-keperawatan-adalah.html">Intervensi Keperawatan Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/kehidupan-sosial-kerajaan-kutai.html">Kehidupan Sosial Kerajaan Kutai</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/adat-istiadat-digunakan-untuk.html">Adat Istiadat Digunakan Untuk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/buah-picung.html">Buah Picung</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/yohanes-13-ayat-13.html">Yohanes 13 Ayat 13</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/grafik-lingkaran.html">Grafik Lingkaran</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/contoh-surat-nikah-siri-asli.html">Contoh Surat Nikah Siri Asli</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/120-menit-berapa-jam.html">120 Menit Berapa Jam</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/contoh-teks-dakwah.html">Contoh Teks Dakwah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/hidupmu-berharga-bagi-allah.html">Hidupmu Berharga Bagi Allah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/kunci-gitar-lagu-pedih.html">Kunci Gitar Lagu Pedih</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/gambar-organ-tubuh-dan-namanya.html">Gambar Organ Tubuh Dan Namanya</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://olahpikir.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://olahpikir.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://olahpikir.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://olahpikir.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://olahpikir.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

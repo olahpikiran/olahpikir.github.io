@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoh Kasus Rebt Dan Penyelesaiannya - BELAJAR</title>
+    <meta name="description" content="Contoh Kasus Rebt Dan Penyelesaiannya, , , , , , , 0, #Part1 Contoh kasus Decision tree dan cara penyelesaiannya. - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, contoh-kasus-rebt-dan-penyelesaiannya, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contoh Kasus Rebt Dan Penyelesaiannya - BELAJAR" />
+    <meta property="og:description" content="Contoh Kasus Rebt Dan Penyelesaiannya, , , , , , , 0, #Part1 Contoh kasus Decision tree dan cara penyelesaiannya. - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, contoh-kasus-rebt-dan-penyelesaiannya, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contoh Kasus Rebt Dan Penyelesaiannya - BELAJAR" />
+    <meta name="twitter:description" content="Contoh Kasus Rebt Dan Penyelesaiannya, , , , , , , 0, #Part1 Contoh kasus Decision tree dan cara penyelesaiannya. - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, contoh-kasus-rebt-dan-penyelesaiannya, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://olahpikir.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://olahpikir.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://olahpikir.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://olahpikir.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://olahpikir.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://olahpikir.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://olahpikir.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://olahpikir.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Contoh Kasus Rebt Dan Penyelesaiannya</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">turahsurya</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Contoh+Kasus+Rebt+Dan+Penyelesaiannya" alt="Contoh Kasus Rebt Dan Penyelesaiannya">
+                    </div>
+                    <p></p>
+                    <p>contoh kasus ham yang belum terselesaikan dan penyelesaiannya</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-ham-yang-belum-terselesaikan-dan-penyelesaiannya">1.
+                                            contoh kasus ham yang belum terselesaikan dan penyelesaiannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cari-bentuk-perpindahan-kasus1kasus2kasus3">2.
+                                            Cari bentuk perpindahan kasus1,kasus2,kasus3</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-1-contoh-kasus-yang-di-selesaikan-secara-ajudikasi-dan-1-contoh-kasus-yang-di-selesaikan-secara-kompromi">3.
+                                            berikan 1 contoh kasus yang di selesaikan secara ajudikasi dan 1 contoh  kasus yang di selesaikan secara kompromi</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-contoh-kasus-dan-selesaikan-sesuai-dengan-dioda-varactor-minimal-2-contoh-kasus">4.
+                                            Buatlah contoh kasus dan selesaikan sesuai dengan dioda varactor (minimal 2 contoh kasus)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-yang-diselesaikan-lipi%e2%80%8b">5.
+                                            Contoh Kasus yang diselesaikan LIPI​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-kasusnya-dan-penyelesaiannya">6.
+                                            berikan contoh kasusnya dan penyelesaiannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-pidana-beserta-penyelesaiannya">7.
+                                            contoh kasus pidana beserta penyelesaiannya!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-koersi-serta-penyelesaian">8.
+                                            contoh kasus koersi serta penyelesaian</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-pelanggaran-ham-dan-penyelesaiannya">9.
+                                            Contoh kasus pelanggaran ham dan penyelesaiannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-pelangaran-ham-dan-penyelesaiannya">10.
+                                            contoh kasus pelangaran HAM dan penyelesaiannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-yang-diselesaikan-di-peradilan-militer">11.
+                                            contoh kasus yang diselesaikan di peradilan militer</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-kasus-pelanggaran-ham-di-indonesia-apa-penyebabnya-dan-bagaimana-penyelesaiannya">12.
+                                            Contoh kasus-kasus pelanggaran HAM di Indonesia. Apa penyebabnya dan bagaimana penyelesaiannya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-tindak-korupsi-serta-penyelesaiannya">13.
+                                            contoh kasus tindak korupsi serta penyelesaiannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-peristiwa-ham-dan-penyelesaian-terhadap-kasus">14.
+                                            contoh peristiwa ham dan penyelesaian terhadap kasus</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-hukum-pidana-dan-penyelesaiannya">15.
+                                            contoh kasus hukum pidana dan penyelesaiannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-ham-dan-cara-penyelesaiannya">16.
+                                            contoh kasus ham dan cara penyelesaiannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-yang-diselesaikan-di-pengadilan-negeri">17.
+                                            contoh kasus yang diselesaikan di pengadilan negeri </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-contoh-kasus-kasus-pelanggaran-ham-dan-penyebab-mengapa-terjadi-serta-penyelesaian-kasus-tersebut%c2%a0">18.
+                                            berikan contoh kasus-kasus pelanggaran ham dan penyebab mengapa terjadi serta penyelesaian kasus tersebut  ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-investasi-dan-penyelesaiannya%e2%80%8b">19.
+                                            Contoh kasus investasi dan penyelesaiannya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-pidana-beserta-penyelesaiannya">20.
+                                            **contoh kasus pidana beserta penyelesaiannya!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-penyelenggaraan-ham-di-sekitar-kita-dan-penyelesaiannya">21.
+                                            contoh kasus penyelenggaraan ham di sekitar kita dan penyelesaiannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-tiga-contoh-kasus-pekerja-migran-dan-penyelesaian-kasus-tersebut%e2%80%8b">22.
+                                            Sebutkan tiga contoh kasus pekerja migran dan penyelesaian kasus tersebut?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-pidana-beserta-penyelesaiannya">23.
+                                            contoh kasus pidana beserta penyelesaiannya!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-perdata-dan-cara-penyelesaiannya">24.
+                                            Contoh kasus perdata dan cara penyelesaiannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-pelanggaran-ham-ringkasan-kasus-dan-alur-penyelesaiannya">25.
+                                            contoh kasus pelanggaran ham (ringkasan kasus) dan alur penyelesaiannya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-contoh-kasus-kasus%c2%a0pelanggaran-ham-serta-jelaskan%c2%a0jenis-pelanggarannya%c2%a0dan-penyelesaian-kasusnya">26.
+                                            Sebutkan contoh kasus-kasus pelanggaran HAM serta jelaskan jenis pelanggarannya dan penyelesaian kasusnya?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-yang-diselesaikan-melalui-pbb">27.
+                                            contoh kasus yang diselesaikan melalui PBB</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-sosialisme-dan-cara-penyelesaiannya">28.
+                                            contoh kasus sosialisme dan cara penyelesaiannya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-yang-terselesaikan-secara-adil">29.
+                                            Contoh kasus yang terselesaikan secara adil</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kasus-yang-dapat-terselesaikan-oleh-kontrol-sosial">30.
+                                            Contoh kasus yang dapat terselesaikan oleh kontrol sosial.!</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="contoh-kasus-ham-yang-belum-terselesaikan-dan-penyelesaiannya">
+                            1. contoh kasus ham yang belum terselesaikan dan penyelesaiannya</h2><br />
+                        pembunuhan secara besar besaran.politik rasisme.seperti pembunuhan massal,pembunuhan berencana,penyiksaan anak,penyiksaan pembantu rumah tangga. <br /> cara penyelesaiannya dgn cara Pemerintah wajib dan bertanggung jawab menghormati, melindungi, menegakkan dan memajukan HAM yang diatur dalam UU ini serta peraturan lain baik nasional maupun internasional tentang HAM yang diakui oleh Indonesia.<br />
+                                            <h2 class="ez-toc-section" id="cari-bentuk-perpindahan-kasus1kasus2kasus3">
+                            2. Cari bentuk perpindahan kasus1,kasus2,kasus3</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kasus yang terjadi pada saat itu pak guru yang telah saya buat untuk melakukan sesuatu yang tidak mencapai syarat yang ditentukan</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="berikan-1-contoh-kasus-yang-di-selesaikan-secara-ajudikasi-dan-1-contoh-kasus-yang-di-selesaikan-secara-kompromi">
+                            3. berikan 1 contoh kasus yang di selesaikan secara ajudikasi dan 1 contoh  kasus yang di selesaikan secara kompromi</h2><br />
+                        Ajudikasi: konflik antara dua orng yg terlibat tabrakan. kedua belah pihak bersikukuh telah berkendara dg benar. jalan damai dengan cara mediasi telah diupayakan namun tidak membuahkan hasil.mau tidak mau ditempuh dg pengadilan untuk menyelesaikan konflik, proses pengadilanlah yang memutuskan pihak mana yang bersalah dan apa hukumannya.<br />kompromi : sejumlah partai politik untuk berbagi wilayah kekuasaannya sesuai dengan suara yang diperoleh masing2 partai. <br /><strong>atau</strong><br />perjanjian antar negara tentang batas wilayah perairan<br />
+                                            <h2 class="ez-toc-section" id="buatlah-contoh-kasus-dan-selesaikan-sesuai-dengan-dioda-varactor-minimal-2-contoh-kasus">
+                            4. Buatlah contoh kasus dan selesaikan sesuai dengan dioda varactor (minimal 2 contoh kasus)</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>output travo </p><p><strong>Penjelasan:</strong></p><p>maaf jika salah </p><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-yang-diselesaikan-lipi%e2%80%8b">
+                            5. Contoh Kasus yang diselesaikan LIPI​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>perpisahan papua trhadap Indonesia</p><br />
+                                            <h2 class="ez-toc-section" id="berikan-contoh-kasusnya-dan-penyelesaiannya">
+                            6. berikan contoh kasusnya dan penyelesaiannya</h2><br />
+                        kasus trisakti penyelesaianya dgn melaporkan kepada komnas ham atas tragedi tersebut<br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-pidana-beserta-penyelesaiannya">
+                            7. contoh kasus pidana beserta penyelesaiannya!</h2><br />
+                        KASUS PIDANA UMUM  CONTOH-CONTOH KASUS PIDANA:  • Kekerasan akibat
+ perkelahian atau penganiayaan • Pelanggaran (senjata tajam, narkotika, 
+lalu lintas) • Pencurian • Korupsi • Pengerusakan • Kekerasan dalam 
+rumah tangga • Pelecehan seksual dan pemerkosaan <br />Proses Hukum Kasus Pidana Umum:  1. PELAPORAN , 2. penyidikan, 3. penuntutan<br />Contoh :<br /><br />Penulis
+menjadi pengacara Lanjar pada persidangan ke -3 tanggal 7 Januari 2010, Lanjar  diadili di Pengadilan Negeri Karanganyar
+didakwa sebagai penyebab kematian istrinya yakni pada hari Senin, 21 September 2009
+sekira pukul 08.10 WIB, terdakwa Lanjar Sriyanto mengendarai sepeda motor
+Yamaha No.Pol. AD-5630-U dari Colomadu menuju Solo atau dari arah barat menuju ke timur
+dengan kecepatan ± 60 km/jam berjalan searah di belakang kendaraan Suzuki
+Carry, dalam jarak yang terlalu dekat Suzuki Carry di depannya tiba-tiba
+berhenti mendadak sehingga terdakwa menabrak Suzuki Carry tersebut yang
+kemudian melarikan diri, akibat tabrakan itu terdakwa dan pemboncengnya
+Samto Warih Waluyo terjatuh ke kiri, sedangkan istrinya Saptaningsih terlempar ke kanan
+atau arah selatan, namun sungguh malang dari arah berlawanan muncul kendaraan
+Izusu Panther milik anggota Kepolisian Ngawi No.Pol. AE-1639-JA langsung menabrak kepala yang
+mengakibatkan kematian istrinya. Selama persidangan mobil Panther dan pengemudi
+tidak pernah dijadikan alat bukti atau tersangka, justru Lanjar dijadikan
+tersangka tunggal sebagaimana yang diatur dan diancam dalam Pasal 359 KUHP. Kasus ini menjadi
+kontroversi dan mendapat liputan banyak media, termasuk Kick Andy Metro TV dalam episode
+Peradilan Sesat “Lanjar Sriyanto “ Pada persidangan ke-3 Lanjar ditangguhkan
+penahanannya setelah sempat ditahan selama 1 bulan 7 hari, di akhir persidangan
+Lanjar dinyatakan bersalah tetapi tidak dapat dihukum karena apa yang
+dilakukannya dalam kondisi terpaksa yang tak seorangpun manusia dapat
+menghindarkannya. Namun Mahkamah Agung Republik Indonesia berpendapat lain pada perkara
+tingkat Kasasi Lanjar Siyanto justru divonis bersalah dan dihukum percobaan 2
+bulan 15 hari.<br /><br />a. Pidana pokok ; <br />
+  1.pidana mati<br />cth:membunuh <br /><br />, 2.pidana penjara<br />mencuri barang/orang<br /><br />, 3.pidana kurungan<br /> <br />mencuri barang yang tidak mahall harganya<br /><br />4.pidana denda<br />cth:membuat kerusaan di toko seseorang<br /><br />, 5.pidana tutupan. <br />cth:melakukan kata-kata yang buruk di depan orang yang hebat.<br /><br /><br />semoga membantu :)<br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-koersi-serta-penyelesaian">
+                            8. contoh kasus koersi serta penyelesaian</h2><br />
+                        adjudikasi, mediasi, arbritasi, dan sebagainya.<br /><br />Maaf kalau salah<br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-pelanggaran-ham-dan-penyelesaiannya">
+                            9. Contoh kasus pelanggaran ham dan penyelesaiannya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Contoh Pelanggaran HAM yang Terjadi di Indonesia</p><p>Kerusuhan Tanjung Priok.</p><p>Penculikan Aktivis Pada 1997/1998.</p><p>Penembakan Mahasiswa Universitas Trisakti.</p><p>Tragedi Semanggi I dan II.</p><p>Kasus Pembunuhan Munir.</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-pelangaran-ham-dan-penyelesaiannya">
+                            10. contoh kasus pelangaran HAM dan penyelesaiannya</h2><br />
+                         1.pelanggaran ham berat<br />a.Kejahatan Genosida dengan cara:<br />membunuh anggota kelompok.<br />b.Kejahatan terhadap kemanusiaan dengan cara:<br />a.pembunuhan <br />b.pemusnahan <br />c.perbudakan<br />d.penyiksaan<br />2.Pelanggaran ham ringan <br />tindakanya ialah mengganggu hak orang lain yang sedang Beribadah,menghambat orang lain yang mau belajar dan menghambat orang lain yang mau belajar. @%<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-yang-diselesaikan-di-peradilan-militer">
+                            11. contoh kasus yang diselesaikan di peradilan militer</h2><br />
+                        Pelanggaran Tata Tertib, Kejahatan Militer, Penganiayaan, Pelanggaran Hak Asasi ManusiaTentara pemukul wartawan dihukum 3 bulan penjara <br />Pengadilan militer vonis 3 anggota kopassus terkait kasus Lp sleman<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-kasus-pelanggaran-ham-di-indonesia-apa-penyebabnya-dan-bagaimana-penyelesaiannya">
+                            12. Contoh kasus-kasus pelanggaran HAM di Indonesia. Apa penyebabnya dan bagaimana penyelesaiannya?</h2><br />
+                        KASUS-KASUS PELANGGARAN HAM DI INDONESIA1. PELANGGARAN HAM OLEH TNIrakyat semakin keras. <br />2. KASUS PELANGGARAN HAM YANG TERJADI DI MALUKUKonflik dan masuk/keluar dibatasi sampai jam 20.00, suasana kota sampai saat ini masih tegang, juga masih terdengar suara tembakan atau bom di sekitar kota.Akibat konflik/kekerasan ini tercatat 8000 orang tewas, sekitar 4000 orang luka – luka, ribuan rumah, perkantoran dan pasar dibakar, ratusan sekolah hancur serta terdapat 692.000 jiwa sebagai korban konflik yang sekarang telah menjadi pengungsi di dalam/luar Maluku. Masyarakat kini semakin tidak percaya dengan dengan upaya – upaya penyelesaian konflik yang dilakukan karena ketidak-seriusan dan tidak konsistennya pemerintah dalam upaya penyelesaian konflik, a<br />3. PELANGGARAN HAM ATAS NAMA AGAMAKita memiliki banyak sejarah gelap agamawi, entah itu dari kalangan gereja Protestan maupun gereja Katolik, edunia. Tapi tidak menutup kemungkinan Presiden Amerika Serikat, George Bush adalah juga seorang ‘Fundamenalis’ dalam ‘Agama’ yang dianutnya, kaa“crusades” dalam pidatonya. Film The Kingdom of Heaven adalah sebuah ‘otokriti perenungan apakah perlakuan seseorang melawan/menindas orang lain yang tidak ‘seagama’ itu tujuannya membela Allah? membela tradisi? membela doktrin, ataukah membela diri sendiri?<br />4.       PELANGGARAN HAM OLEH MANTAN GUBERNUR TIM-TIMAbilio Jose Osorio Soares, mantan Gubernur Timtim, yang diadili oleh Pengadilan Hak Asasi  keputusan terhadap terdakwa Abilio tersebut karena terdakwa lain dalam kan membayar semua dosa yang dilakukan oleh orang Indonesia<br />”.5. Kontroversi G30S`               Di antara kasus-kasus pelanggaran berat HAM, perkara seputar peristiwa G30S bagi KKR bakal menjadi kasus kontroversial. Dilema <br />6.       Kasus Pembunuhan MunirMunir Said Thalib bukan sembarang orang, dia adalah aktifis HAM yang pernah menangani kasus-kasus pelanggaran HAM. Garuda Indonesia dijatuhi hukuman 14 tahun penjara karena terbukti bahwa ia merupakan tersangka dari kasus pembunuhan Munir, karena dengan sengaja ia menaruh Arsenik di makanan Munir<br />.7. Pembunuhan Aktivis Buruh Wanita, Marsinah<br />8Penembakan Mahasiswa Trisakti tragedi trisakti<br />penyebab : Salah satu hak yang dilanggar dalam peristiwa tersebut adalah hak dalam kebebasan menyampaikan pendapat. Hak menyampaikan pendapat adalah kebebasan bagi setiap warga negara dan salah satu bentuk dari pelaksanan sistem demokrasi pancasila di Indonesia. Peristiwa ini menggoreskan sebuah catatan kelam di sejarah bangsa Indonesia dalam hal pelanggaran pelaksanaan demokrasi pancasila.<br />penyelesaian : <br />partisipasi masyarakat untuk ikut turut serta dalam proses penuntasan kasus ini. Namun, sampai sekarang yang masih berjuang hanyalah para keluarga korban dan beberapa aktivis mahasswa yang masih peduli dengan masalah ini. <br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-tindak-korupsi-serta-penyelesaiannya">
+                            13. contoh kasus tindak korupsi serta penyelesaiannya</h2><br />
+                        contoh nya : hak atas uang rakyat Jabar <br />cara penyelesaian nya dengan menghukum seberat beratnya dan meningkatkan kesadaran atas dampak dari korupsi kepada masyarakat . <br />
+                                            <h2 class="ez-toc-section" id="contoh-peristiwa-ham-dan-penyelesaian-terhadap-kasus">
+                            14. contoh peristiwa ham dan penyelesaian terhadap kasus</h2><br />
+                        kasus meninggalnya munir di pesawat penyelesainnya dg melakukan hasil otopsi para dokter yg menyimpulkan bahwa munir meninggal krna terbunuh oleh org yg melakukan pembunuhan tsb. <br />kasusnya : 2 bocah korban kekerasan seksual dimutilasi 
+
+
+<br />penyebab : 
+
+Tersangka melakukannya untuk melampiaskan hawa nafsu mereka
+dan rasa takut mereka karena korban akan menceritakannya kepada orangtuanya akan pelecehan seksual yang mereka lakukan
+
+
+<br />penyelesaiannya : 
+
+Terdakwa sedang diproses di pengadilan
+
+
+<br /><br />semoga membantu :)<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-hukum-pidana-dan-penyelesaiannya">
+                            15. contoh kasus hukum pidana dan penyelesaiannya</h2><br />
+                        contoh kasus :<br /><br />Pada tahun 1982 
+telah terjadi penggelapan uang di bank melalui komputer tentang dua orang 
+mahasiswa yang membobol uang dari sebuah bank swasta di Jakarta sebanyak
+ Rp. 372.100.000,00 dengan menggunakan sarana komputer. Perkembangan 
+lebih lanjut dari teknologi komputer adalah berupa computer networkyang 
+kemudian melahirkan suatu ruang komunikasi dan informasi global yang 
+dikenal dengan internet.<br />Pada kasus tersebut, kasus ini modusnya 
+adalah murni criminal, kejahatan jenis ini biasanya menggunakan internet
+ hanya sebagai sarana kejahatan.<br /><br /><strong>Penyelesaiannya, </strong>karena 
+kejahatan ini termasuk penggelapan uang pada bank dengan menggunaka 
+komputer sebagai alat melakukan kejahatan. Sesuai dengan undang-undang 
+yang ada di Indonesia maka, orang tersebut diancam dengan pasal 362 KUHP
+ atau Pasal 378 KUHP, tergantung dari modus perbuatan yang dilakukannya.<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-ham-dan-cara-penyelesaiannya">
+                            16. contoh kasus ham dan cara penyelesaiannya</h2><br />
+                        pembunuhan - caranya di hukum sesuai apa yang dilanggarpelecahan seksual terhadap anak dibawah umur, dengan memberikan hukuman seberat-beratnya untuk membuat pelaku jera dan tidak mengulanginya lagi<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-yang-diselesaikan-di-pengadilan-negeri">
+                            17. contoh kasus yang diselesaikan di pengadilan negeri </h2><br />
+                        korupsi, pembunuhan, narkoba, terorisme daan lain lain<br /><br />
+                                            <h2 class="ez-toc-section" id="berikan-contoh-kasus-kasus-pelanggaran-ham-dan-penyebab-mengapa-terjadi-serta-penyelesaian-kasus-tersebut%c2%a0">
+                            18. berikan contoh kasus-kasus pelanggaran ham dan penyebab mengapa terjadi serta penyelesaian kasus tersebut  ?</h2><br />
+                        Kasus pelanggaran HAM untuk kesejahteraan contohnya KORUPSI, penyebab terjadinya yaitu orang yang serakah dan tidak mementikan orang lain, cara penyelesaiannya di berikan sanksi kpa si pelaku sesuai UU tertentu,<br /><br />kasus POSO penyebab: pertikaian antara 2 suku berbeda agama yang saling ingin menguasai, penyelesaiannya menghentikan pertikaian tsb dn mengadakan perjanjian perdamaian. <br /><br />maaf cuma 2, bila ada kata yg tidak di mengerti mohon maaf<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-investasi-dan-penyelesaiannya%e2%80%8b">
+                            19. Contoh kasus investasi dan penyelesaiannya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>Pungutan liar
+</p><p>
+</p><p>Asosiasi Pengusaha Mineral Indonesia (APEMINDO) mengirimkan surat kepada Presiden Susilo Bambang Yudhoyono berisi keluhan mengenai pungutan liar yang masih terus terjadi di daerah. Dalam surat bertanggal 25 Juni 2013 itu disebutkan bahwa pungli dilakukan oleh birokrat pemerintah daerah setempat dengan berkedok Sumbangan Pihak Ketiga (SPK).
+</p><p>
+</p><p>Sebenarnya, berdasarkan Undang-Undang Nomor 32 Tahun 2004, Pemda dilarang untuk melakukan pungli. Itu diperkuat oleh Surat Edaran Menteri Dalam Negeri No. 188.34/17/SJ Perihal Penataan Peraturan Daerah Tentang Pajak daerah dan Retribusi Daerah.</p><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-pidana-beserta-penyelesaiannya">
+                            20. **contoh kasus pidana beserta penyelesaiannya!</h2><br />
+                        Dalam kasus penggelapan pajak =&gt;  jangan hanya melihatnya dari satu sisi, hal ini dapat terjadi 
+karena adanya jasa penyedia layanan untuk memanipulasi nilai wajib pajak
+ dari orang dalam kantor pajak itu sendiri. Salah satu oknum yang 
+menyita perhatian masyarakat Indonesia adalah Gayus Tambunan dan 
+sekarang dia sedang menjalankan masa hukumannya.
+
+<br />
+
+Dalam kasus penggelapan pajak, terdapat beberapa tingkat dalam upaya 
+penyelesaiannya, hal ini terkait dengan tingkat kesalahan dan besar 
+kerugian negara. Berdasarkan Undang-undang Pajak (KUP) terdapat empat 
+sanksi dalam penyelesaiannya kasus penggelapan pajak, yaitu, sanksi 
+pidana (pasal 38, pasal 39), sanksi kenaikan (pasal 17C (5), pasal 17D 
+(5)), sanksi bunga (pasal 13 (2)) dan sanksi denda (pasal 7 (1)). Inilah
+ pembahasan terkait contoh kasus hukum pidana dan penyelesaiannya 
+berdasarkan ketentuan hukum di Indonesia.<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-penyelenggaraan-ham-di-sekitar-kita-dan-penyelesaiannya">
+                            21. contoh kasus penyelenggaraan ham di sekitar kita dan penyelesaiannya</h2><br />
+                        kalau di sekitr kita.. <br />    kasus pencurian ... <br />
+                                            <h2 class="ez-toc-section" id="sebutkan-tiga-contoh-kasus-pekerja-migran-dan-penyelesaian-kasus-tersebut%e2%80%8b">
+                            22. Sebutkan tiga contoh kasus pekerja migran dan penyelesaian kasus tersebut?​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jakarta - Sepanjang tahun 2017 Kamar Dagang dan Ekonomi Indonesia (KDEI) Taiwan telah berhasil menyelesaikan 1.529 kasus (94 persen) yang menyangkut Pekerja Migran Indonesia (PMI) di Taiwan. Sedangkan sisanya sebanyak 6 persen kasus masih dalam proses penyelesaian.</p><p></p><p>Demikian diungkapkan Direktur Penempatan dan Perlindungan Tenaga Kerja Luar Negeri (PPTKLN) Kemnaker Soes Hindharno saat melakukan kunjungan ke shelter house Kaohsiung (tempat penampungan sementara) bagi pekerja migran bermasalah di Taiwan.</p><p></p><p>Dalam keterangan pers Biro Humas Kemnaker pada Rabu (21/2/2018), Direktur Soes mengatakan pemerintah berkomitmen untuk mempercepat penyelesaian kasus-kasus PMI yang bermasalah di berbagai negara penempatan.</p><p></p><p>"Pemerintah Indonesia dan Taiwan terus bekerja sama untuk meningkatkan aspek perlindungan bagi PMI dan peningkatan kesejahteraan bagi PMI yang bekerja di Taiwan. Kita ingin kasus-kasus PMI segera diselesaikan dan PMI bisa pulang ke tanah air," kata Soes.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-pidana-beserta-penyelesaiannya">
+                            23. contoh kasus pidana beserta penyelesaiannya!</h2><br />
+                        Kasus Pembunuhan.Penyelesaiannya dengan cara dihukum seberat-beratnya seperti hukuman mati.<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-perdata-dan-cara-penyelesaiannya">
+                            24. Contoh kasus perdata dan cara penyelesaiannya</h2><br />
+                        SLEMAN– Selasa, 17 November 2011 Pengadilan Negeri (PN) Sleman akhirnya mengeksekusi tanah milik Juminten di Dusun Pesanggrahan, Desa Pakembinangun,Kecamatan Pakem, Sleman.<br />Sempat terjadi ketegangan saat proses eksekusi yang melibatkan puluhan aparat kepolisian ini, tapi tidak terjadi tindakan anarkistis. Saat proses eksekusi tanah tersebut,PN Sleman membawa sebuah truk untuk mengangkut barang-barang pemilik rumah serta backhoeuntuk menghancurkan rumah yang tampak baru berdiri di atas tanah seluas 647 meter persegi. ”Kami hanya melaksanakan perintah atasan,” kata Juru Sita PN Sleman Sumartoyo kemarin.<br />Lokasi tanah yang berada di pinggir Jalan Kaliurang Km 17 ini merupakan tanah sengketa antara Juminten dengan Susilowati Rudi Sukarno sebagai pemohon eksekusi. Kasus hukum yang telah berjalanselamatujuh tahun ini berawal dari masalah utang piutang yang dilakukan oleh kedua belah pihak, utang yang dimaksud disini adalah juminten berhutang tentang pembuatan sertifikat tanah serta tidak mau mengganti rugi uang yang sudah diberi oleh susilowati  .<br />Klien kami telah membeli tanah ini dan juga sebidang tanah milik Ibu Juminten lainnya di daerah Jalan Kaliurang Km 15 seharga Rp335 juta.Total tanah ada 997 meter persegi.Masalahnya berawal saat termohon tidak mau diajak ke notaris untuk menandatangani akta jual beli, padahal klien kami sudah membayar lunas,” papar Titiek Danumiharjo, kuasa hukum Susilowati Rudi Sukarno. Kasus ini sebenarnya telah sampai tingkat kasasi, bahkan peninjauan ulang. Dari semua tahap,Susilowati Rudi Sukarno selalu memenangkan perkara.<br />Pihak Juminten yang tidak terima karena merasa tidak pernah menjual tanah milik mereka, berencana menuntut balik dengan tuduhan penipuan dan pemalsuan dokumen. ”Kami merasa tertipu, surat bukti jual beli palsu,”tandas L Suparyono, anak kelima Juminten.<br />Analisa<br />Hukum perdata adalah ketentuan hukum materil yang mengatur hubungan antara orang/individu yang satu dengan yang lain. Hukum perdata berisi tentang hukum orang, hukum keluarga, hukum waris dan hukum harta kekayaan yang meliputi hukum benda dan hukum perikatan.<br />Kasus diatas termasuk kasus perdata khususnya perikatan karena telah terjadi persetujuan antara Juminten dengan Susilowati dalam hal jual-beli tanah. Dalam hukum perdata peristiwa yang dapat dikategorikan sebagai hukum perikatan adalah jka terjadi suatu ikatan persetujuan antara 2 pihak yang melahirkan hak dan kewajiban diantara keduanya dalam lingkup hukum kekayaan.<br />Tetapi dalam kasus diatas telah terjadi suatu sengketa tanah antara Juminten dan Susilowati. Sengketa ini berawal dari utang piutang yang mana Juminten berhutang tentang pembuatan sertifikat tanah serta tidak mau mengganti rugi uang yang sudah diberi oleh Susilowati. Dalam kasus ini, Juminten dianggap merugikan Susilowati, karena sudah dianggap menipu berupa tidak maunya Juminten membuat akta sertifikat tanah dan dari itu pula Juminten tidak mau mengganti dengan uang, karena Juminten beranggapan tidak pernah menjual tanah miliknya kepada Susilowati, padahal penyimpanan atau pendaftaran tanah itu wajib demi terlaksanakannya kepastian hukum. Sehingga Juminten dianggap ingkar janji (wanprestasi) atau tidaak memenuhi perikatan tersebut.<br />Dalam KUH Perdata pasal 1366 berbunyi “Setiap orang bertanggung jawab tidak saja untuk kerugian yang disebabkan karena perbuatanya, tetapi juga untuk kerugian yang disebabkan karena kelalaian atau kurang hati-hatinya”. Disini jelaslah bahwa Juminten melanggar UU tersebut.<br />Solusi<br />Menurut saya, solusi dari permasalahan ini agar pihak Juminten segera membayar tentang hutangnya dalam pembuatan sertifikat tanah terhadap Susilowati dan mebyar ganti rugi uang yang sudah diberi oleh Susilowati agar permasalahn ini cepat terselesaikan. Karena dalam permasalahan ini pihak juminten lah yang bersalah yang tercantum jelas dalam KUH perdata 1366, dan disini pihak Juminten sudah ingkar janji dan tidak memenuhi perjanjian bersama. Saran untuk Juminten agar segera mengembalikan yang sudah disetujui bersama Susilowati jika ingin permasalahan ini cepet terselesaikan.<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-pelanggaran-ham-ringkasan-kasus-dan-alur-penyelesaiannya">
+                            25. contoh kasus pelanggaran ham (ringkasan kasus) dan alur penyelesaiannya?</h2><br />
+                        Kasus trisakti yg menyebabkan meninggalnya 5 mahasiswa trisakti dan oknum pembunuhan dipenjarakan<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-contoh-kasus-kasus%c2%a0pelanggaran-ham-serta-jelaskan%c2%a0jenis-pelanggarannya%c2%a0dan-penyelesaian-kasusnya">
+                            26. Sebutkan contoh kasus-kasus pelanggaran HAM serta jelaskan jenis pelanggarannya dan penyelesaian kasusnya?</h2><br />
+                        Bentrok sesama warga,<br />Tindakan asusila,<br />Pencurian.<br />Kasus pelanggaran HAM ini dapat dikategorikan dalam dua jenis, yaitu :<br />a. Kasus pelanggaran HAM yang bersifat berat, meliputi :Pembunuhan masal (genisida)Pembunuhan sewenang-wenang atau di luar putusan pengadilanPenyiksaanPenghilangan orang secara paksaPerbudakan atau diskriminasi yang dilakukan secara sistematis<br />b. Kasus pelanggaran HAM yang biasa, meliputi :PemukulanPenganiayaanPencemaran nama baikMenghalangi orang untuk mengekspresikan pendapatnyaMenghilangkan nyawa orang lainContoh kasus pelanggaran HAM dilingkungan keluarga antara lain:Orang tua yang memaksakan keinginannya kepada anaknya (tentang masuk sekolah, memilih pekerjaan, dipaksa untuk bekerja, memilih jodoh).Orang tua menyiksa/menganiaya/membunuh anaknya sendiri.Anak melawan/menganiaya/membunuh saudaranya atau orang tuanya sendiri.Majikan dan atau anggota keluarga memperlakukan pembantunya sewenang-wenang dirumah.Contoh kasus pelanggaran HAM di sekolah antara lain :Guru membeda-bedakan siswanya di sekolah (berdasarkan kepintaran, kekayaan, atau perilakunya).Guru memberikan sanksi atau hukuman kepada siswanya secara fisik (dijewer, dicubit, ditendang, disetrap di depan kelas atau dijemur di tengah lapangan).Siswa mengejek/menghina siswa yang lain.Siswa memalak atau menganiaya siswa yang lain.Siswa melakukan tawuran pelajar dengan teman sekolahnya ataupun dengan siswa dari sekolah yang lain<br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-yang-diselesaikan-melalui-pbb">
+                            27. contoh kasus yang diselesaikan melalui PBB</h2><br />
+                        <strong>Contohnya konflik antara Indonesia dengan Malaysia yang memperebutkan Pulau Sipadan dan Ligitan yang terjadi karena ketidakjelasan batas laut antara kedua negara. Kemudian karena tidak menemukan titik terang untuk menyelesaikan persoalan ini,  akhirnya Indonesia memutuskan untuk meminta bantuan kepada PBB melalui pengadilan ad hoc agar menyelesaikan sengketa tersebut. Dan keputusan akhir, kedua pulau itu diserahkan dan diberi hak milik kepada Malaysia.</strong><br /><br /><strong>Good luck. Ini tidak copas ya. :)</strong><br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-sosialisme-dan-cara-penyelesaiannya">
+                            28. contoh kasus sosialisme dan cara penyelesaiannya</h2><br />
+                        lingkungan yng kotor penyelesaiannya gotong roypng<br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-yang-terselesaikan-secara-adil">
+                            29. Contoh kasus yang terselesaikan secara adil</h2><br />
+                        kasus yang diselesaikan melalui meja hijau (pengadilan) ada hakim jaksa saksi dll.. maaf kalo salah<br />
+                                            <h2 class="ez-toc-section" id="contoh-kasus-yang-dapat-terselesaikan-oleh-kontrol-sosial">
+                            30. Contoh kasus yang dapat terselesaikan oleh kontrol sosial.!</h2><br />
+                        contohnya tragedi trisakti 1998 dimana para aparat kepolisian mengeluarkan gas air mata kepada para pendemo<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/KWHfzZqy8Hs?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ppkn</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/zircon.html">Zircon</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/sinonim-kemampuan.html">Sinonim Kemampuan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/imu.html">Imu</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/profil-negara-indonesia.html">Profil Negara Indonesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/bentuk-negara-thailand-adalah.html">Bentuk Negara Thailand Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/sambutan-perpisahan.html">Sambutan Perpisahan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/transmisi-data.html">Transmisi Data</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/komponen-penyusun-ekosistem.html">Komponen Penyusun Ekosistem</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/integrasi-mekaar-login.html">Integrasi Mekaar Login</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/pada-waktu-melayang-di-udara-yang-perlu-diperhatikan-adalah.html">Pada Waktu Melayang Di Udara Yang Perlu Diperhatikan Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/sifat-shalat-nabi.html">Sifat Shalat Nabi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/latering-peta.html">Latering Peta</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/proses-adiabatik.html">Proses Adiabatik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/contoh-drama-bahasa-jawa.html">Contoh Drama Bahasa Jawa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/cover-artikel.html">Cover Artikel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/togel-singapore-hongkong.html">Togel Singapore Hongkong</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/tendangan-t-dalam-pencak-silat.html">Tendangan T Dalam Pencak Silat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/monopluralis-adalah.html">Monopluralis Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/ciri-ciri-teks-akademik.html">Ciri Ciri Teks Akademik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://olahpikir.github.io/soca-adalah.html">Soca Adalah</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://olahpikir.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://olahpikir.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://olahpikir.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://olahpikir.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://olahpikir.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
